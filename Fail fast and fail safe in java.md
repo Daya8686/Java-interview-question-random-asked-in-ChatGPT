@@ -91,3 +91,18 @@ public class FailSafeExample {
     }
 }
 ```
+
+# Summary
+
+## Fail-Fast:
+- **Detects concurrent modification and throws `ConcurrentModificationException`.**
+- **Typically used by standard collections in the `java.util` package.**
+- **Example**: `ArrayList`, `HashMap`.
+
+## Fail-Safe:
+- **Works on a copy of the collection and does not throw exceptions.**
+- **Typically used by concurrent collections in the `java.util.concurrent` package.**
+- **Example**: `CopyOnWriteArrayList`, `ConcurrentHashMap`.
+
+These behaviors help ensure that collections are used safely and correctly in concurrent environments, with fail-fast providing quick detection of issues and fail-safe providing robust iteration in the face of concurrent modifications.
+
