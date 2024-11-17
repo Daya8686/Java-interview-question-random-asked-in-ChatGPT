@@ -37,6 +37,7 @@ public class SortHashMapByKey {
         }
     }
 }
+```
 # Sorting a HashMap by Values
 
 Sorting a HashMap by values is not directly supported because HashMap does not maintain any order. However, you can sort the entries by converting the HashMap to a different data structure like a List that maintains order. Then, sort the list based on the values and store the sorted entries in a LinkedHashMap to maintain the order.
