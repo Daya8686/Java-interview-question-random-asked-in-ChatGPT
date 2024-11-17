@@ -1,5 +1,5 @@
-### 3. Fail fast and fail safe in java
-
+# 3. Fail fast and fail safe in java
+---
 # Fail-Fast and Fail-Safe in Java
 
 In Java, the terms "fail-fast" and "fail-safe" are used to describe the behavior of iterators or collection views when the underlying collection is modified while being iterated over. These behaviors are particularly relevant in concurrent or multi-threaded environments.
