@@ -52,11 +52,32 @@ The Consumer interface is part of the `java.util.function` package and represent
 
 ## Key Method
 `void accept(T t):` This method, when implemented, performs the operation on the given argument `t`.
+### Example of Consumer
 ```java
+import java.util.function.Consumer;
+
+public class ConsumerExample {
+    public static void main(String[] args) {
+        Consumer<String> greeter = (name) -> System.out.println("Hello, " + name + "!");
+        
+        greeter.accept("Alice");
+        greeter.accept("Bob");
+    }
+}
 
 ```
+# Summary
 
+## Callable:
+- **Returns a result.**
+- **Can throw checked exceptions.**
+- **Useful for tasks that need to return a value or throw an exception.**
 
+## Consumer:
+- **Does not return a result.**
+- **Does not throw checked exceptions.**
+- **Useful for operations that consume an input and perform some action with it.**
 
+Both interfaces are used to define tasks and operations in a clear and concise manner, leveraging Java's functional programming capabilities.
 
-
+---
