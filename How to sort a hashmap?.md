@@ -83,8 +83,8 @@ public class SortHashMapByValue {
 * `List<Map.Entry<K, V>> list = new ArrayList<>(map.entrySet());`
 ### 2. Sort the List:
 
-* 'By Keys: list.sort(Map.Entry.comparingByKey());
-By Values: list.sort(Map.Entry.comparingByValue());'
+* `By Keys: list.sort(Map.Entry.comparingByKey());
+By Values: list.sort(Map.Entry.comparingByValue());`
 ### 3. Store in `LinkedHashMap`:
 
 * To maintain the order of sorted entries:
