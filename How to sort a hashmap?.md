@@ -1,4 +1,4 @@
-### 2. How to sort a hashmap?
+# 2. How to sort a hashmap?
 
 # Sorting a HashMap
 
