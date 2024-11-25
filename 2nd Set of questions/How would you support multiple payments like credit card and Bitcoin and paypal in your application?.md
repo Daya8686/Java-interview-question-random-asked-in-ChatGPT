@@ -1,7 +1,7 @@
 # How would you support multiple payments like credit card and Bitcoin and paypal in your application?
 # Supporting Multiple Payment Methods (Credit Card, Bitcoin, PayPal)
 
-To support multiple payment methods in an application (Credit Card, Bitcoin, PayPal), you can use the Strategy Design Pattern. This pattern allows you to encapsulate different payment methods as individual classes, making it easy to add or remove a payment method without changing the code structure significantly.
+To support multiple payment methods in an application (Credit Card, Bitcoin, PayPal), you can use the `Strategy Design Pattern`. This pattern allows you to encapsulate different payment methods as individual classes, making it easy to add or remove a payment method without changing the code structure significantly.
 
 ## Example Design:
 1. Create a `PaymentStrategy` interface to define a common method for payment processing.
