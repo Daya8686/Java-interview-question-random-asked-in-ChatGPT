@@ -16,7 +16,7 @@ public class UniqueElementsInArray {
     public static void main(String[] args) {
         Integer[] array = {1, 2, 2, 3, 4, 4, 5};
 
-        List<Integer> uniqueElements = Arrays.stream(array).sorted()
+        List<Integer> uniqueElements = Arrays.stream(array).sorted().distinct()
                 .collect(Collectors.toList());
 
         System.out.println(uniqueElements);
