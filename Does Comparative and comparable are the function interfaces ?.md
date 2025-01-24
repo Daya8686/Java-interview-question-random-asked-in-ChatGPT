@@ -1,4 +1,4 @@
-# Does Comparative and comparable are the function interfaces ?
+# Does Comparator and comparable are the function interfaces ?
 
 # Comparable and Comparator Interfaces in Java
 
