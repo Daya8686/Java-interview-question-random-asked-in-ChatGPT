@@ -1,4 +1,4 @@
-# How to sort each string in array of string using Java 8?
+# How to sort each string in array of strings using Java 8?
 
 ### Sort Strings with String array
 ```java
@@ -11,7 +11,7 @@ public class SortStringsInArray {
             System.out.println(sortedArray);
 
 //or
-List<String> sortedArray=Arrays.stream(array).sorted().toArray(String[]::new);
+String[] sortedArray = Arrays.stream(array).sorted().toArray(String[]::new);
 System.out.println(Arrays.toString(sortedArray);
 
     }
