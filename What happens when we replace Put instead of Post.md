@@ -1,4 +1,4 @@
-# What happeneds when we replace post with put as we know that put will also create resource in absence of resource then can we replace it with put and what are the issues?
+# What happeneds when we replace post with put as we know that put will also create resource in absence of resource then can we replace it with post and what are the issues?
 
 # Using PUT instead of POST in HTTP
 
