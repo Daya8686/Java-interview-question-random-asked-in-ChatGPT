@@ -86,44 +86,7 @@ public class Main {
     }
 }
 ```
-# Cloning in Java
 
-In Java, cloning is a process of creating a copy of an object. The `Object` class in Java provides a `clone()` method that allows you to create a copy of an object. However, the behavior of cloning depends on whether the object implements the `Cloneable` interface or not.
-
-## 1. Cloning in Java
-Cloning in Java can be done by calling the `clone()` method on an object. By default, the `clone()` method performs a shallow copy, meaning it copies the values of the fields of the object. If you want to enable cloning, the class must implement the `Cloneable` interface. Otherwise, calling `clone()` will throw a `CloneNotSupportedException`.
-
-### Example:
-```java
-class Person implements Cloneable {
-    String name;
-    int age;
-
-    // Constructor
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    // Override clone() method
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone(); // Calls Object's clone method
-    }
-}
-
-public class Main {
-    public static void main(String[] args) throws CloneNotSupportedException {
-        Person p1 = new Person("Alice", 25);
-        Person p2 = (Person) p1.clone(); // Clone the object
-
-        System.out.println(p1 == p2); // false, different memory locations
-        System.out.println(p1.name + " - " + p1.age);
-        System.out.println(p2.name + " - " + p2.age);
-    }
-}
-```
-In this example, p2's scores array is a new array (created during the deep copy process), so modifying it does not affect p1.
 
 # Key Differences Between Shallow and Deep Copy
 
