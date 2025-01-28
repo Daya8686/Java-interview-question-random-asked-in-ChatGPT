@@ -119,7 +119,7 @@ Using an enum is the most straightforward and effective way to create a singleto
 
 #### Example:
 ```java
-Copy code
+
 public enum EnumSingleton {
     INSTANCE;
 
