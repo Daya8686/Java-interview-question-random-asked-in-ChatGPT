@@ -10,7 +10,7 @@ Example:
 Thread t = new Thread();
 
 ```
-- **Runnable:** After calling the `start()` method, the thread is in the runnable state. It may be running or waiting for CPU time.
+- **Runnable:** After calling the `start()` method, the thread is in the runnable state or in running state it depends upon the thread schedular, and it will manage the thread by keeping some time in runnable state and in some time running state, this is totally managed my schedular. It may be running or waiting for CPU time.
 Example:
 ```Java
 t.start();
