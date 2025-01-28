@@ -86,7 +86,48 @@ public class Main {
     }
 }
 ```
+### Deep Copy Example:
+```java
+class Person implements Cloneable {
+    String name;
+    int[] scores;
 
+    // Constructor
+    public Person(String name, int[] scores) {
+        this.name = name;
+        this.scores = scores;
+    }
+
+    // Override clone() for Deep copy
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        try {
+            Person cloned = (Person) super.clone();
+            // Deep copy the scores array
+            cloned.scores = Arrays.copyOf(this.scores, this.scores.length);
+            return cloned;
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws CloneNotSupportedException {
+        int[] scores = {100, 90, 85};
+        Person p1 = new Person("Alice", scores);
+        Person p2 = (Person) p1.clone(); // Deep copy
+        
+
+        // Modifying p2's scores array
+        p2.scores[0] = 50;
+
+        // Both p1 and p2 share the same scores array reference
+        System.out.println(p1.scores[0]); // 50 (since both p1 and p2 refer to the same array)
+    }
+}
+```
 
 # Key Differences Between Shallow and Deep Copy
 
